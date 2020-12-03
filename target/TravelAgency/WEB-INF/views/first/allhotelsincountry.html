@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>All hotels in the country</title>
+</head>
+<body>
+<div th:switch="${hotels}">
+    <h2 th:case="null">Hotels didn't find</h2>
+    <div th:case="*">
+        <h2>Hotels</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Hotel name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="hotel : ${hotels}">
+                <td th:text="${hotel.hotelname}"></td>
+                <td>
+                    <form th:action="@{/all-hotels/{id}(id=*{hotel.id})}"  method="post">
+                   <!-- <form th:action="@{/all-hotels}"  method="post">-->
+                        <div>
+                            <label for="dateofarival">Date of arrival</label>
+                            <input type="date" name="checkin" id="dateofarival" >
+                            <p>
+                            <label for="dateofdeparture">Date of departure</label>
+                            <input type="date" name="checkout" id="dateofdeparture" >
+                            <p>
+                            <input type="submit" value="available rooms">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

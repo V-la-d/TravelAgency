@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Find hotel by country and name</title>
+</head>
+<body>
+<h2>Find hotel by country and name</h2>
+<form th:action="@{/find-h-by-n}" method="post">
+    <label for="writecountyname">Country name</label>
+    <input type="text" name="countryname" id="writecountyname" placeholder="Country name">
+    <label for="writehotelname">Hotel name</label>
+    <input type="text" name="hotelname" id="writehotelname" placeholder="Hotel name">
+
+    <input type="submit" value="Find hotel">
+</form>
+</body>
+</html>
+</body>
+</html>

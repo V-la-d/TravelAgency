@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>All hotels</title>
+</head>
+<body>
+<div th:switch="${hotels}">
+    <h2 th:case="null">Hotels didn't find</h2>
+    <div th:case="*">
+        <h2>All Hotels</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Hotel name</th>
+                <th>Country</th>
+                <th>Rating of hotel</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="hotel : ${hotels}">
+                <td th:text="${hotel.hotelname}"></td>
+                <td th:text="${hotel.countryname}"></td>
+                <td align="center" th:text="${hotel.hotelrating}"></td>
+                <td><a th:href="@{/update-hotel{id}(id=*{hotel.id})}">Edit</a></td>
+                <td><a th:href="@{/delete-hotel{id}(id=*{hotel.id})}">Delete</a></td>
+
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <p><a th:href="@{/add-hotel}">Add hotel</a></p>
+</div>
+</body>
+</html>

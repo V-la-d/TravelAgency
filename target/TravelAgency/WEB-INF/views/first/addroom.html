@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add room</title>
+</head>
+<body>
+<form th:action="@{/add-room}" th:object="${room}"  method="post">
+    <label for="roomnumber">Room number</label>
+    <input type="number" th:field="*{roomnumber}" id="roomnumber" placeholder="Room number">
+    <p>
+        <label for="capacity">Capacity</label>
+        <input type="number" th:field="*{capacity}" id="capacity" placeholder="Capacity">
+    </p>
+    <p>
+        <label for="roomprice">Room price</label>
+        <input type="text" th:field="*{roomprice}" id="roomprice" placeholder="Room price">
+    </p>
+    <p>
+        <input  type="hidden" th:field="*{hotel.id}">
+    </p>
+    <p>
+        <input type="submit" value="Add room">
+    </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>rooms</title>
+</head>
+<body>
+<h2>Available rooms</h2>
+<div th:switch="${rooms}">
+    <h2 th:case="null">Rooms didn't find</h2>
+    <div th:case="*">
+        <table>
+            <thead>
+            <tr>
+                <th>Room number</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="room:${rooms}">
+                <td th:text="${room.roomnumber}"></td>
+                <td>
+                    <form th:action="@{/bookroom/{id}(id=*{room.id})}" method="post">
+                        <input type="submit" value="book">
+                    </form>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
