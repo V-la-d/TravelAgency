@@ -1,6 +1,6 @@
 # Travel Agency
 
-Features
+Feature s
 
 Technologies
 Server Side: Java 8, Spring MVC, Spring Security, Hibernate
