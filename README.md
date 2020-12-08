@@ -4,11 +4,11 @@ Web program, which is a simplified version of the famous hotel booking site "Boo
 
 
 # Technologies
-•Server Side: Java 8, Spring MVC, Spring Security, Hibernate<br/>
-•Client Side: JSP, JSTL<br/>
-•Data Storage: MySQL<br/>
-•Build Tool: Maven<br/>
-•VCS: Git
+• Server Side: Java 8, Spring MVC, Spring Security, Hibernate<br/>
+• Client Side: JSP, JSTL<br/>
+• Data Storage: MySQL<br/>
+• Build Tool: Maven<br/>
+• VCS: Git
 
 # Features
 
@@ -23,11 +23,11 @@ Web program, which is a simplified version of the famous hotel booking site "Boo
 
 ○ Manager:
 
-•All the possibilities of the user in addition:<br/>
-•add new hotels in the system<br/>
-•delete existing hotels from the system<br/>
-•update existing hotel in the system<br/>
-•add new rooms in the concrete hotel<br/>
-•delete existing rooms from the system<br/>
-•update rooms in the concrete hotel<br/>
-•view all users and their bookings
+• All the possibilities of the user in addition:<br/>
+• add new hotels in the system<br/>
+• delete existing hotels from the system<br/>
+• update existing hotel in the system<br/>
+• add new rooms in the concrete hotel<br/>
+• delete existing rooms from the system<br/>
+• update rooms in the concrete hotel<br/>
+• view all users and their bookings
