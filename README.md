@@ -1,4 +1,4 @@
-# TravelAgency
+# Travel Agency
 
 Features
 
@@ -8,6 +8,7 @@ Client Side: JSP, JSTL
 Data Storage: MySQL
 Build Tool: Maven
 VCS: Git
+
 User:
 sign in in system
 find hotels by country
