@@ -1,6 +1,7 @@
 # Travel Agency
+Web program, which is a simplified version of the famous hotel booking site "Booking.com".
 
-Feature s
+# Features
 
 Technologies
 Server Side: Java 8, Spring MVC, Spring Security, Hibernate
