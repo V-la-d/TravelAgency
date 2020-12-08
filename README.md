@@ -3,7 +3,7 @@ Web program, which is a simplified version of the famous hotel booking site "Boo
 
 # Features
 
-Technologies
+# Technologies
 Server Side: Java 8, Spring MVC, Spring Security, Hibernate
 Client Side: JSP, JSTL
 Data Storage: MySQL
