@@ -1,7 +1,7 @@
 # Travel Agency
 Web program, which is a simplified version of the famous hotel booking site "Booking.com".
 
-# Features
+
 
 # Technologies
 Server Side: Java 8, Spring MVC, Spring Security, Hibernate
@@ -10,6 +10,7 @@ Data Storage: MySQL
 Build Tool: Maven
 VCS: Git
 
+# Features
 User:
 sign in in system
 find hotels by country
