@@ -11,7 +11,9 @@ Build Tool: Maven
 VCS: Git
 
 # Features
+
 User:
+
 sign in in system
 find hotels by country
 find available rooms of the concrete hotel on the concrete date
