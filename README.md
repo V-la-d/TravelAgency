@@ -4,7 +4,7 @@ Web program, which is a simplified version of the famous hotel booking site "Boo
 
 
 # Technologies
-Server Side: Java 8, Spring MVC, Spring Security, Hibernate "/n"
+Server Side: Java 8, Spring MVC, Spring Security, Hibernate
 Client Side: JSP, JSTL
 Data Storage: MySQL
 Build Tool: Maven
@@ -12,7 +12,7 @@ VCS: Git
 
 # Features
 
-User:
+○User:
 
 sign in in system
 find hotels by country
