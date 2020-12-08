@@ -15,7 +15,8 @@ VCS: Git
 ○ User:
 
 • sign in in system
-• find hotels by country• find available rooms of the concrete hotel on the concrete date
+• find hotels by country
+• find available rooms of the concrete hotel on the concrete date
 • check availability of the concrete room on concrete date
 • book the available room
 • log out from system
